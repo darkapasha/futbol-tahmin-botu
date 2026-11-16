@@ -1,0 +1,9 @@
+[Unit]
+Description=Futbol bot - her sabah 07:45 (TR) tahminler
+
+[Timer]
+OnCalendar=*-*-* 07:45:00 Europe/Istanbul
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+{
+ "half_life": 150,
+ "xg_w": 0.75,
+ "prior_k": 2,
+ "new_off_att": -0.3,
+ "new_off_def": -0.05,
+ "hfa_prior": 0.22,
+ "window_days": 1100,
+ "val_att": 0.1,
+ "val_def": 0.2
+}

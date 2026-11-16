@@ -1,0 +1,12 @@
+[Unit]
+Description=Futbol bot - sabah tahminleri (ogrenme + simulasyon + yorum)
+After=network-online.target futbol-daily.service
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/futbol_bot
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/ubuntu/futbol_bot/.venv/bin/python -m bot.pipeline
+StandardOutput=append:/home/ubuntu/futbol_bot/logs/predict.log
+StandardError=append:/home/ubuntu/futbol_bot/logs/predict.log
